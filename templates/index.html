@@ -1,14 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Minhas Enquetes</title>
-</head>
-<body>
-    <h1>Bem-vindo ao sistema de enquetes</h1>
+{# Curso Django Framework do Zero: https://www.youtube.com/playlist?list=PLFOqHo8oIjzewcT23HCxJV0xWO451CTJe #}
+{% extends '_layout1.html' %} {# herda tudo que já tem em _layout1.html #}
 
+{% block head_title %}
+    Minhas Enquetes
+{% endblock %}
 
+{% block content %} {# substitui  o bloco content em _layout1.html #}
+    <h1>{{ titulo }}</h1> {# variável a ser substituída #}
+{% endblock %} {# fecha o bloco content #}
 
-</body>
-</html>

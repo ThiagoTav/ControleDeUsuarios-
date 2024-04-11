@@ -1,0 +1,14 @@
+{% extends '_layout1.html' %}
+
+{% block head_title %} Minhas Enquetes {% endblock %} 
+
+
+{% block content %}
+<h1>Enquetes</h1>
+{% for question in all_questions %}
+<article>
+  <p>{{ question.pub_date | date:"d/m/Y"}} | {{ questions.questions_text}}</p>
+</article>
+
+    {% endfor %} 
+{% endblock %}
